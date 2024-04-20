@@ -1,6 +1,6 @@
 {
     "genesis_time": "2024-03-31T14:50:02.018373Z",
-    "chain_id": "testnet",
+    "chain_id": "viper-test",
     "consensus_params": {
         "block": {
             "max_bytes": "15000",
@@ -35,8 +35,8 @@
             },
             "requestors": [
                 {
-                    "address": "9c1ca5228d4951f678271305dc724ec01773fbf5",
-                    "public_key": "d0e6a8b3503b7ae54c66eb3688d73de3458ac379786f653684dc3b5db782c7dd",
+                    "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec",
+                    "public_key": "a6570d12081e63d9972a144e2141d9d90c9e25c954752d86008795b8abcfb49f",
                     "jailed": false,
                     "chains": [
                         "0001",
@@ -67,7 +67,7 @@
                 {
                     "type": "posmint/Account",
                     "value": {
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5",
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec",
                         "coins": [
                             {
                                 "denom": "uvipr",
@@ -76,7 +76,71 @@
                         ],
                         "public_key": {
                             "type": "crypto/ed25519_public_key",
-                            "value": "9c297bd42ff78006ddc84fc5cb15c58475ce485211864a34a0c86a921e371278"
+                            "value": "a6570d12081e63d9972a144e2141d9d90c9e25c954752d86008795b8abcfb49f"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "19189805ed257a5a4e22ca980089789a6c78d3d1",
+                        "coins": [
+                            {
+                                "denom": "uvipr",
+                                "amount": "10000000000000"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "f8f403f1256119cff7b342a566fa04c4616dbb6d307a1410f8bd7da15d7e101a"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "307caa77e20b21bd0549c5504c6599e8a156103a",
+                        "coins": [
+                            {
+                                "denom": "uvipr",
+                                "amount": "10000000000000"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "96de6003926b02aee728bd3f2025aed7bba9232b5b411655612fae6995c71edd"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "3171d7bfd1b41807e7fa359343703c0f1045d1a0",
+                        "coins": [
+                            {
+                                "denom": "uvipr",
+                                "amount": "10000000000000"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "4ad2ec5fd921b90177d5eae19d73e687bab89c1361f40ed82365d4ae29b98a89"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "541d49a75ad2ccb6426496f373213367fb286d30",
+                        "coins": [
+                            {
+                                "denom": "uvipr",
+                                "amount": "10000000000000"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "55df6d9e30f86ba251a0cf0dbf0b87f2a3dd2482aebc049c321fa6241dfdbeea"
                         }
                     }
                 }
@@ -117,300 +181,300 @@
                 "acl": [
                     {
                         "acl_key": "requestor/MinimumRequestorStake",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/RequestorUnstakingTime",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/RelaysPerVIPR",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/MaxRequestors",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/MaximumChains",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/ParticipationRate",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/StabilityModulation",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/MinNumServicers",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/MaxNumServicers",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/StakeFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/UnstakeFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "requestor/UnjailFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "authentication/MaxMemoCharacters",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "authentication/TxSigLimit",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "authentication/FeeMultipliers",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "governance/acl",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
-                        "acl_key": "governance/governer",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "acl_key": "governance/governor",
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "governance/upgrade",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
-                        "acl_key": "governance/GovernerTransferFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "acl_key": "governance/GovernorTransferFee",
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "governance/ChangeParamFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "governance/GenerateDiscountKeyFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "governance/UpgradeFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/CommitExpirationPeriod",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/ReplayAttackPenaltyFactor",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/ProofSubmissionWindow",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/MinimumProofsRequired",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/SupportedBlockchains",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/SupportedGeoZones",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/MinSampleRelaysThreshold",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/ReportSubmissionWindow",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/CommitFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/ReportFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "vipernet/VerificationFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/BlocksPerSession",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
-                        "acl_key": "servicers/GovernerAllocation",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "acl_key": "servicers/GovernorAllocation",
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/RequestorAllocation",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/DowntimeJailDuration",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MaxEvidenceAge",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MaximumChains",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MaxJailedBlocks",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MaxValidators",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MinSignedPerWindow",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/TokenRewardFactor",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/SignedBlocksWindow",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/SlashFractionDoubleSign",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/SlashFractionDowntime",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/StakeDenom",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/StakeMinimum",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/UnstakingTime",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/ServicerCountLock",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/BurnActive",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MinPauseTime",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MaxFishermen",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/FishermenCount",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/SlashFractionNoActivity",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/ProposerPercentage",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/FishermenAllocation",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/LatencyScoreWeight",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/AvailabilityScoreWeight",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/ReliabilityScoreWeight",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/RelaysToTokensChainMultiplierMap",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/RelaysToTokensGeoZoneMultiplierMap",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MaxFreeTierRelaysPerSession",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MaxNonPerformantBlocks",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/MinScore",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/StakeFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/UnstakeFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/UnjailFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/SendFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/PauseFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     },
                     {
                         "acl_key": "servicers/UnPauseFee",
-                        "address": "9c1ca5228d4951f678271305dc724ec01773fbf5"
+                        "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec"
                     }
                 ],
-                "governer": "9c1ca5228d4951f678271305dc724ec01773fbf5",
+                "governor": "0be2e28205b2bf5a1b59855b488604510e81b0ec",
                 "upgrade": {
                     "Height": "0",
                     "Version": "0"
                 },
-                "governer_transfer_fee": "10000",
+                "governor_transfer_fee": "10000",
                 "change_param_fee": "10000",
                 "upgrade_fee": "10000",
                 "generate_discount_key_fee": "10000"
             },
-            "Governer_Tokens": "0"
+            "Governor_Tokens": "0"
         },
         "servicers": {
             "params": {
@@ -418,7 +482,7 @@
                 "availability_score_weight": "0.300000000000000000",
                 "reliability_score_weight": "0.300000000000000000",
                 "relays_to_tokens_multiplier": "1000",
-                "governer_allocation": "10",
+                "governor_allocation": "10",
                 "requestor_allocation": "5",
                 "proposer_allocation": "5",
                 "fisherman_allocation": "5",
@@ -460,8 +524,32 @@
             "prevState_validator_powers": null,
             "validators": [
                 {
-                    "address": "9c1ca5228d4951f678271305dc724ec01773fbf5",
-                    "public_key": "9c297bd42ff78006ddc84fc5cb15c58475ce485211864a34a0c86a921e371278",
+                    "address": "0be2e28205b2bf5a1b59855b488604510e81b0ec",
+                    "public_key": "a6570d12081e63d9972a144e2141d9d90c9e25c954752d86008795b8abcfb49f",
+                    "jailed": false,
+                    "paused": false,
+                    "status": 2,
+                    "chains": [
+                        "0001"
+                    ],
+                    "node_url": "http://127.0.0.1:8082",
+                    "tokens": "10000000000000",
+                    "geo_zone": [
+                        "0001"
+                    ],
+                    "unstaking_time": "0001-01-01T00:00:00Z",
+                    "output_address": "",
+                    "report_card": {
+                        "total_sessions": 0,
+                        "total_latency_score": "0.000000000000000000",
+                        "total_availability_score": "0.000000000000000000",
+                        "total_reliability_score": "0.000000000000000000",
+                        "total_score": "0"
+                    }
+                },
+                {
+                    "address": "19189805ed257a5a4e22ca980089789a6c78d3d1",
+                    "public_key": "f8f403f1256119cff7b342a566fa04c4616dbb6d307a1410f8bd7da15d7e101a",
                     "jailed": false,
                     "paused": false,
                     "status": 2,
@@ -477,11 +565,85 @@
                     "unstaking_time": "0001-01-01T00:00:00Z",
                     "output_address": "",
                     "report_card": {
-                        "total_sessions": 0,
-                        "total_latency_score": "0.000000000000000000",
-                        "total_availability_score": "0.000000000000000000",
-                        "total_reliability_score": "0.000000000000000000",
-                        "total_score": "0"
+                        "total_sessions": 2,
+                        "total_latency_score": "1.000000000000000000",
+                        "total_availability_score": "1.000000000000000000",
+                        "total_reliability_score": "1.000000000000000000",
+                        "total_score": "1"
+                    }
+                },
+                {
+                    "address": "307caa77e20b21bd0549c5504c6599e8a156103a",
+                    "public_key": "96de6003926b02aee728bd3f2025aed7bba9232b5b411655612fae6995c71edd",
+                    "jailed": false,
+                    "paused": false,
+                    "status": 2,
+                    "chains": [
+                        "0001",
+                        "0002"
+                    ],
+                    "node_url": "http://127.0.0.1:8082",
+                    "tokens": "10000000000000",
+                    "geo_zone": [
+                        "0001"
+                    ],
+                    "unstaking_time": "0001-01-01T00:00:00Z",
+                    "output_address": "",
+                    "report_card": {
+                        "total_sessions": 1,
+                        "total_latency_score": "0.800000000000000000",
+                        "total_availability_score": "0.800000000000000000",
+                        "total_reliability_score": "0.800000000000000000",
+                        "total_score": "0.8"
+                    }
+                },
+                {
+                    "address": "3171d7bfd1b41807e7fa359343703c0f1045d1a0",
+                    "public_key": "4ad2ec5fd921b90177d5eae19d73e687bab89c1361f40ed82365d4ae29b98a89",
+                    "jailed": false,
+                    "paused": false,
+                    "status": 2,
+                    "chains": [
+                        "0001"
+                    ],
+                    "node_url": "http://127.0.0.1:8082",
+                    "tokens": "10000000000000",
+                    "geo_zone": [
+                        "0001"
+                    ],
+                    "unstaking_time": "0001-01-01T00:00:00Z",
+                    "output_address": "",
+                    "report_card": {
+                        "total_sessions": 2,
+                        "total_latency_score": "0.900000000000000000",
+                        "total_availability_score": "0.900000000000000000",
+                        "total_reliability_score": "0.900000000000000000",
+                        "total_score": "0.9"
+                    }
+                },
+                {
+                    "address": "541d49a75ad2ccb6426496f373213367fb286d30",
+                    "public_key": "55df6d9e30f86ba251a0cf0dbf0b87f2a3dd2482aebc049c321fa6241dfdbeea",
+                    "jailed": false,
+                    "paused": false,
+                    "status": 2,
+                    "chains": [
+                        "0001",
+                        "0002"
+                    ],
+                    "node_url": "http://127.0.0.1:8082",
+                    "tokens": "10000000000000",
+                    "geo_zone": [
+                        "0001"
+                    ],
+                    "unstaking_time": "0001-01-01T00:00:00Z",
+                    "output_address": "",
+                    "report_card": {
+                        "total_sessions": 4,
+                        "total_latency_score": "1.000000000000000000",
+                        "total_availability_score": "1.000000000000000000",
+                        "total_reliability_score": "1.000000000000000000",
+                        "total_score": "1"
                     }
                 }
             ],
