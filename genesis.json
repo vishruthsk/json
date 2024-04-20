@@ -1,693 +1,166 @@
 {
-    "genesis_time": "2024-03-31T14:50:02.018373Z",
-    "chain_id": "testnet",
-    "consensus_params": {
-        "block": {
-            "max_bytes": "15000",
-            "max_gas": "-1",
-            "time_iota_ms": "1"
+    "tendermint_config": {
+        "RootDir": "/Users/vishruthsk/.viper",
+        "ProxyApp": "tcp://127.0.0.1:26658",
+        "Moniker": "vishruths-MacBook-Air.local",
+        "FastSyncMode": true,
+        "DBBackend": "goleveldb",
+        "LevelDBOptions": {
+            "block_cache_capacity": 83886,
+            "block_cache_evict_removed": false,
+            "block_size": 4096,
+            "disable_buffer_pool": true,
+            "open_files_cache_capacity": -1,
+            "write_buffer": 838860
         },
-        "evidence": {
-            "max_age": "1000000"
+        "DBPath": "data",
+        "LogLevel": "*:info, *:error",
+        "LogFormat": "plain",
+        "Genesis": "config/genesis.json",
+        "PrivValidatorKey": "validator_private_key.json",
+        "PrivValidatorState": "validator_private_state.json",
+        "PrivValidatorListenAddr": "",
+        "NodeKey": "servicer_key.json",
+        "ABCI": "socket",
+        "ProfListenAddress": "",
+        "FilterPeers": false,
+        "RPC": {
+            "RootDir": "/Users/vishruthsk/.viper",
+            "ListenAddress": "tcp://127.0.0.1:26657",
+            "CORSAllowedOrigins": [],
+            "CORSAllowedMethods": [
+                "HEAD",
+                "GET",
+                "POST"
+            ],
+            "CORSAllowedHeaders": [
+                "Origin",
+                "Accept",
+                "Content-Type",
+                "X-Requested-With",
+                "X-Server-Time"
+            ],
+            "GRPCListenAddress": "",
+            "GRPCMaxOpenConnections": 2500,
+            "Unsafe": false,
+            "MaxOpenConnections": 2500,
+            "MaxSubscriptionClients": 100,
+            "MaxSubscriptionsPerClient": 5,
+            "TimeoutBroadcastTxCommit": 10000000000,
+            "MaxBodyBytes": 1000000,
+            "MaxHeaderBytes": 1048576,
+            "TLSCertFile": "",
+            "TLSKeyFile": ""
         },
-        "validator": {
-            "pub_key_types": [
-                "ed25519"
-            ]
+        "P2P": {
+            "RootDir": "/Users/vishruthsk/.viper",
+            "ListenAddress": "tcp://0.0.0.0:26656",
+            "ExternalAddress": "",
+            "Seeds": "08dcb5bbb1c6c7afebdfc586da0258d1f6b0e9d8@testnet-seed1.vipernet.xyz:26656",
+            "PersistentPeers": "",
+            "UPNP": false,
+            "AddrBook": "config/addrbook.json",
+            "AddrBookStrict": false,
+            "MaxNumInboundPeers": 14,
+            "MaxNumOutboundPeers": 7,
+            "UnconditionalPeerIDs": "",
+            "PersistentPeersMaxDialPeriod": 0,
+            "FlushThrottleTimeout": 100000000,
+            "MaxPacketMsgPayloadSize": 1024,
+            "SendRate": 5120000,
+            "RecvRate": 5120000,
+            "PexReactor": true,
+            "SeedMode": false,
+            "PrivatePeerIDs": "",
+            "AllowDuplicateIP": true,
+            "HandshakeTimeout": 20000000000,
+            "DialTimeout": 3000000000,
+            "TestDialFail": false,
+            "TestFuzz": false,
+            "TestFuzzConfig": {
+                "Mode": 0,
+                "MaxDelay": 3000000000,
+                "ProbDropRW": 0.2,
+                "ProbDropConn": 0,
+                "ProbSleep": 0
+            }
+        },
+        "Mempool": {
+            "RootDir": "/Users/vishruthsk/.viper",
+            "Recheck": true,
+            "Broadcast": true,
+            "WalPath": "",
+            "Size": 36000,
+            "MaxTxsBytes": 4294967296,
+            "CacheSize": 36000,
+            "MaxTxBytes": 4194304
+        },
+        "FastSync": {
+            "Version": "v1"
+        },
+        "Consensus": {
+            "RootDir": "/Users/vishruthsk/.viper",
+            "WalPath": "data/cs.wal/wal",
+            "TimeoutPropose": 120000000000,
+            "TimeoutProposeDelta": 10000000000,
+            "TimeoutPrevote": 60000000000,
+            "TimeoutPrevoteDelta": 10000000000,
+            "TimeoutPrecommit": 60000000000,
+            "TimeoutPrecommitDelta": 10000000000,
+            "TimeoutCommit": 780000000000,
+            "SkipTimeoutCommit": false,
+            "CreateEmptyBlocks": true,
+            "CreateEmptyBlocksInterval": 900000000000,
+            "PeerGossipSleepDuration": 30000000000,
+            "PeerQueryMaj23SleepDuration": 20000000000
+        },
+        "TxIndex": {
+            "Indexer": "kv",
+            "IndexKeys": "tx.hash,tx.height,message.sender,transfer.recipient",
+            "IndexAllKeys": false
+        },
+        "Instrumentation": {
+            "Prometheus": false,
+            "PrometheusListenAddr": ":26660",
+            "MaxOpenConnections": 3,
+            "Namespace": "tendermint"
         }
     },
-    "app_hash": "",
-    "app_state": {
-        "requestor": {
-            "params": {
-                "minimum_number_servicers": "1",
-                "maximum_number_servicers": "25",
-                "minimum_requestor_stake": "10000",
-                "base_relays_per_vip": "100000",
-                "unstaking_time": "1814400000000000",
-                "max_requestors": "9223372036854775807",
-                "stability_modulation": "0",
-                "participation_rate_on": false,
-                "maximum_chains": "15",
-                "stake_fee": "10000",
-                "unstake_fee": "10000",
-                "unjail_fee": "10000"
-            },
-            "requestors": [
-                {
-                    "address": "0db23dc6307c0c517f2a795b1e272392611417e3",
-                    "public_key": "d0e6a8b3503b7ae54c66eb3688d73de3458ac379786f653684dc3b5db782c7dd",
-                    "jailed": false,
-                    "chains": [
-                        "0001",
-                        "0002"
-                    ],
-                    "max_relays": "10000000000000",
-                    "status": 2,
-                    "staked_tokens": "10000000000000",
-                    "geo_zone": [
-                        "0001"
-                    ],
-                    "num_servicers": "1",
-                    "unstaking_time": "0001-01-01T00:00:00Z"
-                }
-            ],
-            "exported": false
-        },
-        "authentication": {
-            "params": {
-                "max_memo_characters": "256",
-                "tx_sig_limit": "7",
-                "fee_multipliers": {
-                    "fee_multiplier": null,
-                    "default": "1"
-                }
-            },
-            "accounts": [
-                {
-                    "type": "posmint/Account",
-                    "value": {
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3",
-                        "coins": [
-                            {
-                                "denom": "uvipr",
-                                "amount": "10000000000000"
-                            }
-                        ],
-                        "public_key": {
-                            "type": "crypto/ed25519_public_key",
-                            "value": "f44674f3d11f5d50f26f77af612f06e5efd9f5c817513acf9510b65443540d2d"
-                        }
-                    }
-                },
-                {
-                    "type": "posmint/Account",
-                    "value": {
-                        "address": "2afca141b05f1a1020fc730f2c0fd5fbf59d584c",
-                        "coins": [
-                            {
-                                "denom": "uvipr",
-                                "amount": "10000000000000"
-                            }
-                        ],
-                        "public_key": {
-                            "type": "crypto/ed25519_public_key",
-                            "value": "6e6d7f7be8ad23a1fbaa063538902abe8d2ad8a2b4aa50ee361ad239050bb2a0"
-                        }
-                    }
-                },
-                {
-                    "type": "posmint/Account",
-                    "value": {
-                        "address": "3aa60a4cabf35f8eb0e92c78decf0d05c881af90",
-                        "coins": [
-                            {
-                                "denom": "uvipr",
-                                "amount": "10000000000000"
-                            }
-                        ],
-                        "public_key": {
-                            "type": "crypto/ed25519_public_key",
-                            "value": "911a9639bdd86607705b1821dfabe3cf59c88cff3dc83c64a9a2ef8dd1e5dc47"
-                        }
-                    }
-                },
-                {
-                    "type": "posmint/Account",
-                    "value": {
-                        "address": "704f6a9a452666dff927d740be640acdcedab611",
-                        "coins": [
-                            {
-                                "denom": "uvipr",
-                                "amount": "10000000000000"
-                            }
-                        ],
-                        "public_key": {
-                            "type": "crypto/ed25519_public_key",
-                            "value": "bdbac3af758b5629cd2f98ed9e1b65c42d86e27861aae3540a4c065021629c71"
-                        }
-                    }
-                },
-                {
-                    "type": "posmint/Account",
-                    "value": {
-                        "address": "cda35369f1510b203136a2f0f1977e139c3ae490",
-                        "coins": [
-                            {
-                                "denom": "uvipr",
-                                "amount": "10000000000000"
-                            }
-                        ],
-                        "public_key": {
-                            "type": "crypto/ed25519_public_key",
-                            "value": "197805f9eec4f6ce7c0e5f57eeae956a7d48a368f24f3f5e25bec4487fdbafde"
-                        }
-                    }
-                }
-            ],
-            "supply": []
-        },
-        "ibc": {
-            "client_genesis": {
-                "clients": [],
-                "clients_consensus": [],
-                "clients_metadata": null,
-                "params": {
-                    "allowed_clients": [
-                        "06-solomachine",
-                        "07-tendermint"
-                    ]
-                }
-            },
-            "connection_genesis": {
-                "connections": [],
-                "client_connection_paths": [],
-                "params": {
-                    "max_expected_time_per_block": "30000000000"
-                }
-            },
-            "channel_genesis": {
-                "channels": [],
-                "acknowledgements": [],
-                "commitments": [],
-                "receipts": [],
-                "send_sequences": [],
-                "recv_sequences": [],
-                "ack_sequences": []
-            }
-        },
-        "governance": {
-            "params": {
-                "acl": [
-                    {
-                        "acl_key": "requestor/MinimumRequestorStake",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/RequestorUnstakingTime",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/RelaysPerVIPR",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/MaxRequestors",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/MaximumChains",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/ParticipationRate",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/StabilityModulation",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/MinNumServicers",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/MaxNumServicers",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/StakeFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/UnstakeFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "requestor/UnjailFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "authentication/MaxMemoCharacters",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "authentication/TxSigLimit",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "authentication/FeeMultipliers",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "governance/acl",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "governance/governor",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "governance/upgrade",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "governance/GovernorTransferFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "governance/ChangeParamFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "governance/GenerateDiscountKeyFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "governance/UpgradeFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/CommitExpirationPeriod",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/ReplayAttackPenaltyFactor",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/ProofSubmissionWindow",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/MinimumProofsRequired",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/SupportedBlockchains",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/SupportedGeoZones",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/MinSampleRelaysThreshold",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/ReportSubmissionWindow",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/CommitFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/ReportFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "vipernet/VerificationFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/BlocksPerSession",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/GovernorAllocation",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/RequestorAllocation",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/DowntimeJailDuration",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MaxEvidenceAge",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MaximumChains",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MaxJailedBlocks",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MaxValidators",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MinSignedPerWindow",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/TokenRewardFactor",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/SignedBlocksWindow",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/SlashFractionDoubleSign",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/SlashFractionDowntime",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/StakeDenom",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/StakeMinimum",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/UnstakingTime",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/ServicerCountLock",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/BurnActive",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MinPauseTime",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MaxFishermen",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/FishermenCount",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/SlashFractionNoActivity",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/ProposerPercentage",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/FishermenAllocation",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/LatencyScoreWeight",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/AvailabilityScoreWeight",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/ReliabilityScoreWeight",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/RelaysToTokensChainMultiplierMap",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/RelaysToTokensGeoZoneMultiplierMap",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MaxFreeTierRelaysPerSession",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MaxNonPerformantBlocks",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/MinScore",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/StakeFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/UnstakeFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/UnjailFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/SendFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/PauseFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    },
-                    {
-                        "acl_key": "servicers/UnPauseFee",
-                        "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
-                    }
-                ],
-                "governor": "0db23dc6307c0c517f2a795b1e272392611417e3",
-                "upgrade": {
-                    "Height": "0",
-                    "Version": "0"
-                },
-                "governor_transfer_fee": "10000",
-                "change_param_fee": "10000",
-                "upgrade_fee": "10000",
-                "generate_discount_key_fee": "10000"
-            },
-            "Governor_Tokens": "0"
-        },
-        "servicers": {
-            "params": {
-                "latency_score_weight": "0.400000000000000000",
-                "availability_score_weight": "0.300000000000000000",
-                "reliability_score_weight": "0.300000000000000000",
-                "relays_to_tokens_multiplier": "1000",
-                "governor_allocation": "10",
-                "requestor_allocation": "5",
-                "proposer_allocation": "5",
-                "fisherman_allocation": "5",
-                "maximum_chains": "15",
-                "relays_to_tokens_chain_multiplier_map": {},
-                "relays_to_tokens_geozone_multiplier_map": {},
-                "unstaking_time": "1814400000000000",
-                "max_validators": "100",
-                "stake_denom": "uvipr",
-                "minimum_stake": "10000000000",
-                "session_block_frequency": "2",
-                "max_jailed_blocks": "2000",
-                "max_evidence_age": "120000000000",
-                "signed_blocks_window": "10",
-                "min_signed_per_window": "0.500000000000000000",
-                "burn_active": false,
-                "min_pause_time": "600000000000",
-                "max_fishermen": "5",
-                "downtime_jail_duration": "3600000000000",
-                "slash_fraction_double_sign": "0.000001000000000000",
-                "slash_fraction_downtime": "0.000001000000000000",
-                "servicer_count_lock": false,
-                "fishermen_count": "1",
-                "slash_fraction_noactivity": "0.000001000000000000",
-                "slash_fraction_fisherman": "0.020000000000000000",
-                "maximum_free_tier_relays_per_session": "5000",
-                "maximum_missed_report_cards": "3",
-                "maximum_non_performant_blocks": "5",
-                "minimum_score": "0.670000000000000000",
-                "slash_fraction_bad_performance": "0.020000000000000000",
-                "stake_fee": "10000",
-                "unstake_fee": "10000",
-                "unjail_fee": "10000",
-                "send_fee": "10000",
-                "pause_fee": "10000",
-                "unpause_fee": "10000"
-            },
-            "prevState_total_power": "0",
-            "prevState_validator_powers": null,
-            "validators": [
-                {
-                    "address": "0db23dc6307c0c517f2a795b1e272392611417e3",
-                    "public_key": "f44674f3d11f5d50f26f77af612f06e5efd9f5c817513acf9510b65443540d2d",
-                    "jailed": false,
-                    "paused": false,
-                    "status": 2,
-                    "chains": [
-                        "0001",
-                        "0002"
-                    ],
-                    "node_url": "http://127.0.0.1:8082",
-                    "tokens": "10000000000000",
-                    "geo_zone": [
-                        "0001"
-                    ],
-                    "unstaking_time": "0001-01-01T00:00:00Z",
-                    "output_address": "",
-                    "report_card": {
-                        "total_sessions": 0,
-                        "total_latency_score": "0.000000000000000000",
-                        "total_availability_score": "0.000000000000000000",
-                        "total_reliability_score": "0.000000000000000000",
-                        "total_score": "0"
-                    }
-                },
-                {
-                    "address": "2afca141b05f1a1020fc730f2c0fd5fbf59d584c",
-                    "public_key": "6e6d7f7be8ad23a1fbaa063538902abe8d2ad8a2b4aa50ee361ad239050bb2a0",
-                    "jailed": false,
-                    "paused": false,
-                    "status": 2,
-                    "chains": [
-                        "0001",
-                        "0002"
-                    ],
-                    "node_url": "http://127.0.0.1:8082",
-                    "tokens": "10000000000000",
-                    "geo_zone": [
-                        "0001"
-                    ],
-                    "unstaking_time": "0001-01-01T00:00:00Z",
-                    "output_address": "",
-                    "report_card": {
-                        "total_sessions": 2,
-                        "total_latency_score": "1.000000000000000000",
-                        "total_availability_score": "1.000000000000000000",
-                        "total_reliability_score": "1.000000000000000000",
-                        "total_score": "1"
-                    }
-                },
-                {
-                    "address": "3aa60a4cabf35f8eb0e92c78decf0d05c881af90",
-                    "public_key": "911a9639bdd86607705b1821dfabe3cf59c88cff3dc83c64a9a2ef8dd1e5dc47",
-                    "jailed": false,
-                    "paused": false,
-                    "status": 2,
-                    "chains": [
-                        "0001",
-                        "0002"
-                    ],
-                    "node_url": "http://127.0.0.1:8082",
-                    "tokens": "10000000000000",
-                    "geo_zone": [
-                        "0001"
-                    ],
-                    "unstaking_time": "0001-01-01T00:00:00Z",
-                    "output_address": "",
-                    "report_card": {
-                        "total_sessions": 1,
-                        "total_latency_score": "0.800000000000000000",
-                        "total_availability_score": "0.800000000000000000",
-                        "total_reliability_score": "0.800000000000000000",
-                        "total_score": "0.8"
-                    }
-                },
-                {
-                    "address": "704f6a9a452666dff927d740be640acdcedab611",
-                    "public_key": "bdbac3af758b5629cd2f98ed9e1b65c42d86e27861aae3540a4c065021629c71",
-                    "jailed": false,
-                    "paused": false,
-                    "status": 2,
-                    "chains": [
-                        "0001",
-                        "0002"
-                    ],
-                    "node_url": "http://127.0.0.1:8082",
-                    "tokens": "10000000000000",
-                    "geo_zone": [
-                        "0001"
-                    ],
-                    "unstaking_time": "0001-01-01T00:00:00Z",
-                    "output_address": "",
-                    "report_card": {
-                        "total_sessions": 2,
-                        "total_latency_score": "0.900000000000000000",
-                        "total_availability_score": "0.900000000000000000",
-                        "total_reliability_score": "0.900000000000000000",
-                        "total_score": "0.9"
-                    }
-                },
-                {
-                    "address": "cda35369f1510b203136a2f0f1977e139c3ae490",
-                    "public_key": "197805f9eec4f6ce7c0e5f57eeae956a7d48a368f24f3f5e25bec4487fdbafde",
-                    "jailed": false,
-                    "paused": false,
-                    "status": 2,
-                    "chains": [
-                        "0001",
-                        "0002"
-                    ],
-                    "node_url": "http://127.0.0.1:8082",
-                    "tokens": "10000000000000",
-                    "geo_zone": [
-                        "0001"
-                    ],
-                    "unstaking_time": "0001-01-01T00:00:00Z",
-                    "output_address": "",
-                    "report_card": {
-                        "total_sessions": 4,
-                        "total_latency_score": "1.000000000000000000",
-                        "total_availability_score": "1.000000000000000000",
-                        "total_reliability_score": "1.000000000000000000",
-                        "total_score": "1"
-                    }
-                }
-            ],
-            "exported": false,
-            "signing_infos": {},
-            "missed_blocks": {},
-            "previous_proposer": ""
-        },
-        "transfer": {
-            "port_id": "transfer",
-            "denom_traces": [],
-            "params": {
-                "send_enabled": true,
-                "receive_enabled": true
-            }
-        },
-        "vipernet": {
-            "params": {
-                "min_sample_relays_threshold": "25",
-                "report_submission_window": "3",
-                "commit_expiration_period": "24",
-                "replay_attack_penalty_factor": "3",
-                "proof_submission_window": "3",
-                "supported_blockchains": [
-                    "0001",
-                    "0002"
-                ],
-                "minimum_proofs_required": "10",
-                "block_size": "160000000",
-                "supported_geo_zones": [
-                    "0001"
-                ],
-                "commit_fee": "10000",
-                "report_fee": "10000",
-                "verification_fee": "10000"
-            },
-            "commits": null,
-            "report_cards": null
-        },
-        "capability": {
-            "index": "1",
-            "owners": []
-        }
+    "viper_config": {
+        "data_dir": "/Users/vishruthsk/.viper",
+        "genesis_file": "genesis.json",
+        "chains_name": "blockchains.json",
+        "evidence_db_name": "viper_evidence",
+        "result_db_name": "viper_result",
+        "tendermint_uri": "tcp://localhost:26657",
+        "keybase_name": "viper-keybase",
+        "rpc_port": "8082",
+        "client_block_sync_allowance": 10,
+        "max_evidence_cache_entries": 500,
+        "max_session_cache_entries": 500,
+        "max_result_cache_entries": 500,
+        "json_sort_relay_responses": true,
+        "remote_cli_url": "http://localhost:8082",
+        "user_agent": "",
+        "validator_cache_size": 40000,
+        "fisherman_cache_size": 40000,
+        "application_cache_size": 10000,
+        "rpc_timeout": 15000,
+        "viper_prometheus_port": "8083",
+        "prometheus_max_open_files": 3,
+        "max_commit_age_for_proof_retry": 32,
+        "ctx_cache_size": 20,
+        "abci_logging": false,
+        "show_relay_errors": true,
+        "disable_tx_events": true,
+        "iavl_cache_size": 5000000,
+        "chains_hot_reload": false,
+        "generate_token_on_start": true,
+        "viper_lite": false,
+        "viper_lite_user_key_file": "lite_servicers_keys.json",
+        "geo_zones_name": "geozone.json",
+        "geo_zones_hot_reload": false,
+        "sample_pool_name": "samplepool.json",
+        "sample_pool_hot_reload": false
     }
 }
