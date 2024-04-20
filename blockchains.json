@@ -1,0 +1,18 @@
+[
+  {
+    "id": "0001",
+    "url": "http://localhost:8081/",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0002",
+    "url": "https://eth-mainnet.g.alchemy.com/v2/6J5GUn2zNruWP0jWndJBe9STR3SmRIdE",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  }
+]
