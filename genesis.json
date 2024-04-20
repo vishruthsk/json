@@ -244,7 +244,7 @@
                         "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
                     },
                     {
-                        "acl_key": "governance/governer",
+                        "acl_key": "governance/governor",
                         "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
                     },
                     {
@@ -252,7 +252,7 @@
                         "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
                     },
                     {
-                        "acl_key": "governance/GovernerTransferFee",
+                        "acl_key": "governance/GovernorTransferFee",
                         "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
                     },
                     {
@@ -316,7 +316,7 @@
                         "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
                     },
                     {
-                        "acl_key": "servicers/GovernerAllocation",
+                        "acl_key": "servicers/GovernorAllocation",
                         "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
                     },
                     {
@@ -464,17 +464,17 @@
                         "address": "0db23dc6307c0c517f2a795b1e272392611417e3"
                     }
                 ],
-                "governer": "0db23dc6307c0c517f2a795b1e272392611417e3",
+                "governor": "0db23dc6307c0c517f2a795b1e272392611417e3",
                 "upgrade": {
                     "Height": "0",
                     "Version": "0"
                 },
-                "governer_transfer_fee": "10000",
+                "governor_transfer_fee": "10000",
                 "change_param_fee": "10000",
                 "upgrade_fee": "10000",
                 "generate_discount_key_fee": "10000"
             },
-            "Governer_Tokens": "0"
+            "Governor_Tokens": "0"
         },
         "servicers": {
             "params": {
@@ -482,7 +482,7 @@
                 "availability_score_weight": "0.300000000000000000",
                 "reliability_score_weight": "0.300000000000000000",
                 "relays_to_tokens_multiplier": "1000",
-                "governer_allocation": "10",
+                "governor_allocation": "10",
                 "requestor_allocation": "5",
                 "proposer_allocation": "5",
                 "fisherman_allocation": "5",
