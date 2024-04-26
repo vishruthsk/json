@@ -55,7 +55,7 @@
     "P2P": {
       "RootDir": "/home/viper/.viper",
       "ListenAddress": "tcp://0.0.0.0:26656",
-      "ExternalAddress": "tcp://testnet-seed1.vipernet.xyz:26656",
+      "ExternalAddress": "tcp://testnet-seed2.vipernet.xyz:26656",
       "Seeds": "",
       "PersistentPeers": "",
       "UPNP": false,
